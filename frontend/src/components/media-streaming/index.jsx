@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Player from "./IVSPlayerComponent";
 import { Button, Input } from "antd";
 import axios from "axios";
+import ReactPlayer from "react-player";
 
 export default function MediaStreaming() {
   const [channelArn, setChannelArn] = useState("");
@@ -38,6 +39,7 @@ export default function MediaStreaming() {
         </>
       ) : (
         <>
+
           <div style={{display:"flex", justifyContent:"space-evenly", alignItems:"center"}}>
             <span>Enter Channel : </span>
             <Input
